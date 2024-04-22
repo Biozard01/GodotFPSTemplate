@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmnhx8gfumobq"]
+
+[ext_resource type="PackedScene" uid="uid://dd63vd88lmkqr" path="res://Character/Visuals/characterZombie.fbx" id="1_5p54x"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_28wha"]
+radius = 0.278733
+
+[node name="Zombie" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_28wha")
+
+[node name="CharacterMesh" parent="CollisionShape3D" instance=ExtResource("1_5p54x")]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, -1, 0)

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://wmwueeexirgl"]
+[gd_scene load_steps=6 format=3 uid="uid://wmwueeexirgl"]
 
 [ext_resource type="PackedScene" uid="uid://jdwrlm1trvc2" path="res://Character/Player.tscn" id="1_14mds"]
+[ext_resource type="PackedScene" uid="uid://bmnhx8gfumobq" path="res://Character/Zombie.tscn" id="2_nh257"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_seq8v"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -25,3 +26,6 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("1_14mds")]
+
+[node name="Zombie" parent="." instance=ExtResource("2_nh257")]
+transform = Transform3D(-0.99864, 0, -0.0521441, 0, 1, 0, 0.0521441, 0, -0.99864, -0.055307, 0, -7.41937)

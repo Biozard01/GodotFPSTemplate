@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://hryuoodlmkve"]
+
+[ext_resource type="Texture2D" uid="uid://nfcvq4hrwhab" path="res://Character/Visuals/zombieMaleA.png" id="1_x3cle"]
+
+[resource]
+albedo_texture = ExtResource("1_x3cle")
