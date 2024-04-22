@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf15n6voiwo3u"]
+
+[ext_resource type="Material" uid="uid://dd1inleexge32" path="res://Weapons/Sawed_Off_Shotgun/M_Sawed_Off_Shotgun.tres" id="1_psc4j"]
+[ext_resource type="ArrayMesh" uid="uid://chce6x8pfa3wc" path="res://Weapons/Sawed_Off_Shotgun/COG_Double_Barrel.obj" id="2_tf6h5"]
+
+[node name="SawedOffShotgun" type="Node3D"]
+
+[node name="CogDoubleBarrel" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03411, 0, 1.31152)
+material_override = ExtResource("1_psc4j")
+mesh = ExtResource("2_tf6h5")
