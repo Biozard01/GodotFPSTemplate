@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b88qiypot4bvd"]
+
+[ext_resource type="Texture2D" uid="uid://bhqa8001w8dw0" path="res://Environment/Textures/bars.png" id="1_vuu5c"]
+
+[resource]
+transparency = 1
+albedo_texture = ExtResource("1_vuu5c")
