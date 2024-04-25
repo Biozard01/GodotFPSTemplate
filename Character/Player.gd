@@ -5,6 +5,7 @@ const WALK_SPEED = 5.0
 const SPRINT_SPEED = 8.0
 const JUMP_VELOCITY = 5
 const SENSITIVITY = 0.003
+const GAMEPAD_SENSITIVITY := 2
 
 # head bob variables
 const BOB_FREQ = 2.0
@@ -28,9 +29,16 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * SENSITIVITY)
 		camera.rotate_x(-event.relative.y * SENSITIVITY)
-		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60)) 
+		camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-60), deg_to_rad(60))
+
 
 func _physics_process(delta):
+	
+	# Handle joypad camera.
+	var rotation_input := Input.get_vector("camera_left", "camera_right", "camera_up", "camera_down")
+	head.rotation_degrees.y -= rotation_input.x * GAMEPAD_SENSITIVITY
+	head.rotation_degrees.x -= rotation_input.y * GAMEPAD_SENSITIVITY
+		
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
