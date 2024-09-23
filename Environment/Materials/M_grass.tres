@@ -3,13 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://tog7jtm3omi8" path="res://Environment/Textures/grass.png" id="1_040oo"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hidno"]
-load_path = "res://.godot/imported/grass_ambientocclusionmap.png-6c50510ec36d23753bd636d642aa817e.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tl84q"]
-load_path = "res://.godot/imported/grass_displacementmap.png-457347f35e857fc4772cea9a8b72fb32.s3tc.ctex"
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0o2k2"]
-load_path = "res://.godot/imported/grass_normal.png-5fb06dfee5e7662fdb3a0a35ea67fdf4.s3tc.ctex"
 
 [resource]
 albedo_texture = ExtResource("1_040oo")
