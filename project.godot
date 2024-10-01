@@ -19,6 +19,10 @@ config/icon="res://Meta/icon.svg"
 
 SimpleGrass="*res://addons/simplegrasstextured/singleton.tscn"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [dotnet]
 
 project/assembly_name="GodotFPSTemplate"
